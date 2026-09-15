@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.kwame.datadash.ai.AiAssistantActivity
 import com.kwame.datadash.databinding.ActivityMainBinding
 import com.kwame.datadash.xlsx.XlsxReader
 import com.kwame.datadash.xlsx.XlsxWriter
@@ -108,6 +109,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_ai_assistant -> {
+                startActivity(Intent(this, AiAssistantActivity::class.java))
+                true
+            }
             R.id.action_export -> {
                 createDocLauncher.launch("datadash_export.xlsx")
                 true

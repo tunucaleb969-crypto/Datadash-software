@@ -10,6 +10,11 @@
         app:actionViewClass="androidx.appcompat.widget.SearchView" />
 
     <item
+        android:id="@+id/action_ai_assistant"
+        android:title="@string/ai_assistant"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_export"
         android:title="@string/export_xlsx"
         app:showAsAction="never" />

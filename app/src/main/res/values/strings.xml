@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">DataDash</string>
+    <string name="no_entries">No entries yet. Tap + to add one.</string>
+    <string name="add_entry">Add Entry</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="notes">Notes</string>
+    <string name="required_field">This field is required</string>
+    <string name="entry_saved">Entry saved</string>
+    <string name="entry_deleted">Entry deleted</string>
+    <string name="search_hint">Search entries</string>
+    <string name="export_xlsx">Export to Excel</string>
+    <string name="import_xlsx">Import from Excel</string>
+    <string name="export_success">Exported successfully</string>
+    <string name="export_failed">Export failed</string>
+    <string name="import_result">Imported %1$d entries</string>
 </resources>

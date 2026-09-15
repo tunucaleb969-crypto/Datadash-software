@@ -83,9 +83,9 @@ object XlsxWriter {
     private fun rowXml(rowIndex: Int, values: List<String>): String {
         val sb = StringBuilder("<row r=\"$rowIndex\">")
         values.forEachIndexed { colIndex, value ->
-            val cellRef = "${'$'}{columnLetter(colIndex)}$rowIndex"
+            val cellRef = columnLetter(colIndex) + rowIndex.toString()
             sb.append(
-                """<c r="$cellRef" t="inlineStr"><is><t xml:space="preserve">${escapeXml(value)}</t></is></c>"""
+                """<c r="$cellRef" t="inlineStr"><is><t xml:space="preserve">${'$'}{escapeXml(value)}</t></is></c>"""
             )
         }
         sb.append("</row>")

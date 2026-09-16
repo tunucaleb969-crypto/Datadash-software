@@ -18,4 +18,10 @@
     <string name="export_success">Exported successfully</string>
     <string name="export_failed">Export failed</string>
     <string name="import_result">Imported %1$d entries</string>
+    <string name="ai_assistant">AI Assistant</string>
+    <string name="ask_hint">Ask a question about your data</string>
+    <string name="ask">Ask</string>
+    <string name="get_insights">Get Insights</string>
+    <string name="ai_error">AI request failed: %1$s</string>
+    <string name="suggest_category_ai">✨ Suggest category with AI</string>
 </resources>

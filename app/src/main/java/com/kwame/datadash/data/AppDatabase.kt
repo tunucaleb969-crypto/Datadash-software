@@ -15,6 +15,13 @@ abstract class AppDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: AppDatabase? = null
 
+        // sqlcipher-android (unlike the older, deprecated android-database-sqlcipher)
+        // does not load its native library automatically — it must be loaded
+        // explicitly before any SQLCipher class is used.
+        init {
+            System.loadLibrary("sqlcipher")
+        }
+
         fun getInstance(context: Context): AppDatabase {
             return INSTANCE ?: synchronized(this) {
                 INSTANCE ?: build(context).also { INSTANCE = it }
